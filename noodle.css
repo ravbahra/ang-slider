@@ -1,0 +1,38 @@
+.master-container{
+
+    border: 1px solid black;
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    position:relative;
+}
+
+
+.sliders{
+    height: 30px;
+    position:relative;
+
+}
+
+.slider{
+    height:100%;
+    border: 1px solid red;
+    box-sizing: border-box;
+    position:absolute;
+    width:30px;
+
+    transform:translate(-50%,0);
+}
+
+.macro > p{
+    margin:0;
+    padding:0;
+}
+
+.macro{
+    position:relative;
+    border: 1px solid black;
+    display:inline-block;
+    height: 30px;
+    box-sizing: border-box;
+}

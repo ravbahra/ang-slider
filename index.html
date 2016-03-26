@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="noodle.css">
+</head>
+<body>
+
+<div ng-app='myapp' ng-controller='controller'>
+
+
+    <div class='master-container'>
+
+        <div class='sliders'>
+            <slider-container>
+                <carb-protein-slider class='slider cp-slider' style='left:{{carb_protein_slider_pos}}%'></carb-protein-slider>
+                <protein-fat-slider class='slider cp-slider' style='left:{{protein_fat_slider_pos}}%'></protein-fat-slider>
+
+
+
+                
+            </slider-container>
+        </div>
+
+
+        <div class='macro-container'>
+            <div class='macro macro-carb' ng-style='{width:carb_percent+"%"}'><p>carb</p></div><div class='macro macro-protein' style='width:{{protein_percent}}%'>protein</div><div class='macro' style='width:{{fat_percent}}%'><p>fat</p></div>
+        </div>
+
+    </div>
+    <p>{{carb_percent}}</p>
+    <p>{{protein_percent}}</p>
+    <p>{{fat_percent}}</p>
+</div>
+
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="noodle.js"></script>
+<script src="angsliderdirective.js"></script>
+</body>
+</html>
