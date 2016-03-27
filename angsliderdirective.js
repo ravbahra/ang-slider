@@ -91,6 +91,7 @@ app.directive('carbProteinSlider', ['$document', function($document) {
             var clickedX = 0;
 
             element.on('mousedown', function(event) {
+                event.preventDefault();
                 clickedX = event.pageX;
                 $document.on('mousemove', dragslider);
                 $document.on('mouseup', stopslidin);
@@ -133,6 +134,7 @@ app.directive('proteinFatSlider', ['$document', function($document) {
             var clickedX = 0;
 
             element.on('mousedown', function(event) {
+                event.preventDefault();
                 clickedX = event.pageX;
                 $document.on('mousemove', dragslider);
                 $document.on('mouseup', stopslidin);

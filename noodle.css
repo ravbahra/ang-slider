@@ -1,27 +1,24 @@
 .master-container{
-
-    border: 1px solid black;
-    width: 80%;
-    height: 100px;
     margin: 0 auto;
     position:relative;
 }
 
 
 .sliders{
-    height: 30px;
     position:relative;
+    height: 90px;
 
 }
 
-.slider{
-    height:100%;
-    border: 1px solid red;
+.sliderx{
+
     box-sizing: border-box;
     position:absolute;
-    width:30px;
 
     transform:translate(-50%,0);
+}
+.custom-label-pos{
+    transform:rotate(90deg);
 }
 
 .macro > p{
@@ -33,6 +30,6 @@
     position:relative;
     border: 1px solid black;
     display:inline-block;
-    height: 30px;
+    height: 60px;
     box-sizing: border-box;
 }
